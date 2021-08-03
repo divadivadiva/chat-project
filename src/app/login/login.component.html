@@ -10,7 +10,15 @@
           class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f.username.errors }"
         />
-
+        <br />
+        <label for="username">user Name</label>
+        <input
+          type="text"
+          formControlName="userName"
+          class="form-control"
+          [ngClass]="{ 'is-invalid': submitted && f.userName.errors }"
+        />
+        <br />
         <button [disabled]="loading" class="btn btn-primary">
           <span
             *ngIf="loading"

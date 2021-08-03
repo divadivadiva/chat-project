@@ -25,6 +25,7 @@ export class LoginComponent {
   ngOnInit() {
     this.form = this.formBuilder.group({
       username: ['', Validators.required],
+      userName: ['', Validators.required],
     });
   }
 
@@ -45,6 +46,7 @@ export class LoginComponent {
 
     this.loading = true;
     localStorage.setItem('accesToken', this.f.username.value);
+    localStorage.setItem('userName', this.f.userName.value);
 
     this.router.navigate(['home']);
   }

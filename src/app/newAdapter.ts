@@ -53,12 +53,26 @@ export class SignalRAdapter extends ChatAdapter {
     //   this.userId = userId;
     // });
 
-    this.hubConnection.on('messageReceived', (participant, message) => {
+    this.hubConnection.on('messageReceived', (participantId, msg) => {
       // Handle the received message to ng-chat
+      let participant = {
+        participantType: ChatParticipantType.User,
+        id: participantId,
+        displayName: '',
+        avatar:
+          'https://pbs.twimg.com/profile_images/3456602315/aad436e6fab77ef4098c7a5b86cac8e3.jpeg',
+        status: ChatParticipantStatus.Busy,
+      };
+      let {
+        author: fromId,
+        body: message,
+        correspondant: toId,
+        time: dateSent,
+      } = msg;
+      this.onMessageReceived(participant, { fromId, message, toId, dateSent });
       console.log('message received ', message);
-      this.onMessageReceived(participant, message);
+      console.log('message participant ', participant);
     });
-
     // this.hubConnection.on(
     //   'friendsListChanged',
     //   (participantsResponse: Array<ParticipantResponse>) => {

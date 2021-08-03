@@ -9,9 +9,12 @@ import { SignalRAdapter } from '../newAdapter';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  useNAme;
   title = 'chatProject';
   userId = 'c5324dd0-1c00-2b38-868a-39fe04b4ca26';
   constructor(public http: HttpClient) {}
   public adapter: ChatAdapter = new SignalRAdapter('Bader', this.http);
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.useNAme = localStorage.getItem('userName');
+  }
 }
