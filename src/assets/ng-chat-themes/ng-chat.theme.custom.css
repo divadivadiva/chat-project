@@ -1,0 +1,157 @@
+.primary-background {
+  background-color: white;
+}
+.secondary-background {
+  background-color: white;
+}
+.ng-chat-title {
+  color: #222b45 !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid #edf1f7;
+  font-family: Open Sans, sans-serif;
+}
+#ng-chat .shadowed {
+  box-shadow: none;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  /* border-bottom: 1px solid #edf1f7; */
+  position: relative;
+  z-index: 2;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.9em;
+  padding: 0 10px;
+  display: block;
+  color: inherit;
+  font-weight: 400;
+}
+.ng-chat-participant-status {
+  display: none;
+}
+#ng-chat-users li .ng-chat-friends-list-container > strong {
+  font-family: 'Open Sans';
+  font-weight: 500;
+}
+#ng-chat-people {
+  border-radius: 10px;
+  border: 1px solid #e4e9f2;
+}
+.ng-chat-unread-messages-count {
+  background-color: #e4e9f2;
+  color: #444;
+}
+.ng-chat-title,
+.ng-chat-title:hover {
+  position: relative;
+  z-index: 2;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.9em;
+  padding: 0 10px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  cursor: pointer;
+}
+.ng-chat-window {
+  border: 1px solid #e4e9f2;
+  border-radius: 0.17rem;
+  box-shadow: none;
+}
+.ng-chat-close {
+  color: #848484;
+  text-decoration: none;
+}
+.ng-chat-close,
+ng-chat-close:hover {
+  color: #848484 !important;
+  text-decoration: none !important;
+}
+.ng-chat-window .ng-chat-footer {
+  box-sizing: border-box;
+  border-top: 1px solid #edf1f7;
+  display: block;
+
+  width: 100%;
+
+  padding: 0.2rem 0.25rem;
+}
+.ng-chat-window .ng-chat-footer > input {
+  /* font-size: .8em; */
+  /* box-sizing: border-box; */
+  /* padding: 0 5px; */
+  /* display: block; */
+  /* height: 100%; */
+  width: 100%;
+  /* border: none; */
+  background-color: #f7f9fc;
+  border-color: #e4e9f2;
+  color: #222b45;
+  font-size: 0.9375rem;
+  /* font-weight: 600; */
+  line-height: 1.5rem;
+  border-radius: 2px;
+  padding: 0.4375rem 1rem;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Open Sans, sans-serif;
+  -webkit-appearance: none;
+  font: 400 13.3333px Arial;
+}
+.ng-chat-window .ng-chat-footer > input:focus-visible {
+  background-color: #fff;
+  border-color: #36f;
+  outline: none;
+}
+.ng-chat-window .ng-chat-footer > input:hover {
+  background-color: #f7f9fc;
+  border-color: #e4e9f2;
+  outline: none;
+}
+.sent-chat-message-container > span {
+  float: right;
+  background: #f7f9fc;
+  color: #222b45;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0;
+}
+.ng-chat-window .ng-chat-messages .ng-chat-message .message-sent-date {
+  font-size: 0.75rem;
+  color: #8f9bb3;
+  margin-block: 0.5rem;
+  background-color: #fff;
+  padding: 0;
+  width: 100%;
+}
+.ng-chat-window
+  .ng-chat-messages
+  .ng-chat-message.ng-chat-message-received
+  > div.received-chat-message-container {
+  border: none;
+}
+.received-chat-message-container > span {
+  float: left;
+  background-color: #007bff;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+}
+.ng-chat-window
+  .ng-chat-messages
+  .ng-chat-message.ng-chat-message-received
+  > div.received-chat-message-container
+  .message-sent-date {
+  text-align: start;
+}
+.ng-chat-close {
+  color: transparent !important;
+  background-image: url('close-outline.svg');
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  margin-top: 7px;
+}
